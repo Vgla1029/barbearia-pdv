@@ -1,0 +1,123 @@
+
+html {  
+    width: 100%; height: 100%;  
+    font-family: "Nova Square", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;  
+    color: #eee;  
+}  
+body {  
+    margin: 0 0;  
+    background: url("https://static.vecteezy.com/ti/vetor-gratis/p1/9626037-silhueta-paisagem-com-nevoeiro-floresta-pinheiros-montanhas-ilustracao-de-vista-parque-nacional-nevoa-preto-e-branco-bom-para-papel-de-parede-fundo-banner-capa-cartaz-gratis-vetor.jpg");  
+    background-repeat: no-repeat;  
+    background-attachment: fixed;   
+    background-size: cover;  
+    background-position: center;  
+    height: 100%;  
+    width: 100%;
+    
+}  
+.back1 {  
+    flex:1;  
+    display: flex;  
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);  
+    height: 100vh;  
+}  
+header {  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+    padding: 10px 0px;  
+    gap: 10px;  
+    margin: 0;   
+    box-shadow: 0 0 10px #000000;  
+    backdrop-filter: blur(4px);  
+    border-radius: 3.5%;
+}  
+.perfil {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+}
+.perfil img {  
+    width: 60px;  
+    height: 60px;  
+    filter: drop-shadow(0 0 3px white);  
+}  
+.perfil h1 {  
+    color: white;  
+    font-size: 1.8rem;  
+    margin: 0;  
+}  
+.perfil h2 {  
+    color: #474747;  
+    font-size: 1.2rem;  
+    margin: 0;  
+}  
+.main1 {  
+    width: 50%;  
+    margin: 0 auto;  
+    height: 100%;  
+}  
+.credits {  
+    display: flex;  
+    align-items: center;  
+    margin: auto;
+    text-align: center;
+}  
+.box-login {  
+    padding: 20px 20px;  
+    margin: auto;  
+    backdrop-filter: blur(4px);  
+    -webkit-backdrop-filter: blur(4px);  
+    width: 24rem;  
+    border-radius: 30px 30px;  
+    box-shadow: 0 0 10px #b8b8b8c2;  
+    transition: all 0.5s ease;  
+    background-color: #20202060;  
+}  
+.box-login:hover {  
+    transform: scale(1.05);  
+    shadow: 0px 0px 4px rgba(255, 255, 255, 0.6);
+}  
+input {  
+    width: 100%;  
+    padding: 12px 20px;  
+    margin: 8px 0;  
+    display: inline-block;  
+    border: none;  
+    box-sizing: border-box;  
+    border-radius: 20px 20px;  
+    filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.6));  
+    transition: all 0.5s ease;  
+    background-color: #303030;
+    color: white;
+}
+input:hover {  
+    transform: scale(1.05);  
+    filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.6));  
+}  
+button {  
+    padding: 12px 20px;  
+    margin: 8px 0;  
+    width: 100%;  
+    display: inline-block;  
+    border: none;  
+    box-sizing: border-box;  
+    border-radius: 20px 20px;  
+    filter: drop-shadow(0px 0px 8px rgba(35, 35, 36, 1));
+    transition: all 0.5s ease;  
+    background-color: #2b2b2b;  
+    color: white;
+}  
+.box-login button {  
+    margin: 1rem 0rem;  
+}  
+button:hover {  
+    transform: scale(1.05);  
+    filter: drop-shadow(0px 0px 16px rgba(35, 35, 35, 1));  
+}  
