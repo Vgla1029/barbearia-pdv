@@ -35,7 +35,7 @@ Possui interface responsiva com estilos modernos usando CSS.
 
 ## Estrutura do Projeto
 
-'''
+```
 barbearia_pdv/
 ├── barbearia_pdv/
 │   ├── __init__.py
@@ -75,4 +75,4 @@ barbearia_pdv/
     ├── tests.py
     ├── urls.py
     └── views.py
-'''
+```
