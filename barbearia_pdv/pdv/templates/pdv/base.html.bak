@@ -128,12 +128,10 @@
     {% with excluded_routes='/login/,/register/' %}
         {% if request.path not in excluded_routes %}
         <header class="navbar">
-        <div class="logo">
-            <img src="{% static 'global/logo.png' %}" alt="Logo">
-            <span>Barbearia PDV</span>
-        </div>
-    
-        <div class="menu-container">
+            <div class="logo">
+                <img src="{% static 'global/logo.png' %}" alt="Logo">
+                <span>Barbearia PDV</span>
+            </div>
             <nav class="nav-links">
                 <a href="{% url 'dashboard' %}">Dashboard</a>
                 <a href="{% url 'clientes' %}">Clientes</a>
@@ -147,8 +145,7 @@
                 <span></span>
                 <span></span>
             </div>
-        </div>
-    </header>
+        </header>
         {% endif %}
     {% endwith %}
 

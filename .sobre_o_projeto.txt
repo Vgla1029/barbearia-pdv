@@ -1,0 +1,97 @@
+Apresentação Técnica: Sistema de Barbearia (PDV)
+
+1️⃣ Sobre o projeto
+
+Sistema feito em Python com Django, para gerenciar uma barbearia.
+
+Funciona como um PDV (Ponto de Venda), organizando clientes, serviços, agendamentos e vendas.
+
+Possui painel administrativo e interface moderna com login e caixas estilizadas.
+
+
+
+---
+
+2️⃣ Estrutura do projeto
+
+barbearia_pdv/ → Pasta principal do projeto Django.
+
+manage.py → Script pra rodar e gerenciar o projeto.
+
+db.sqlite3 → Banco de dados, onde ficam salvos usuários, clientes, serviços e agendamentos.
+
+pdv/ → App principal com funcionalidades do sistema.
+
+models.py → Define as tabelas do banco: Cliente, Servico, Agendamento.
+
+views.py → Funções que recebem pedidos do usuário e mostram as páginas ou salvam dados.
+
+urls.py → Define os caminhos das páginas (ex: /login/, /clientes/).
+
+forms.py → Define os formulários de cadastro e edição.
+
+templates/ → Arquivos HTML que são mostrados pro usuário.
+
+static/ → CSS e imagens para estilizar o sistema.
+
+
+
+
+
+---
+
+3️⃣ Principais funcionalidades
+
+Login e Registro → Protege o sistema, só quem tem conta pode acessar.
+
+Dashboard → Mostra informações resumidas sobre a barbearia, como vendas e agendamentos.
+
+Clientes → Permite cadastrar, listar e organizar clientes.
+
+Serviços → Cadastrar e listar serviços da barbearia com preços.
+
+Agendamentos → Criar horários de atendimento vinculados a clientes e serviços.
+
+Relatórios → Mostrar total de vendas e agendamentos em tabela.
+
+
+
+---
+
+4️⃣ Como cada parte funciona tecnicamente
+
+Models (models.py) → São classes que criam as tabelas no banco de dados.
+
+Views (views.py) → Recebem os pedidos dos usuários e enviam os dados certos para as páginas.
+
+Templates (HTML) → Onde o usuário vê os dados, com CSS para deixar bonito.
+
+Forms (forms.py) → Simplificam a criação de formulários, validando os dados antes de salvar.
+
+URLs (urls.py) → Ligam cada página do sistema a uma função específica no views.py.
+
+Static (CSS) → Define cores, caixas, botões e animações da interface.
+
+
+
+---
+
+5️⃣ Tecnologias usadas
+
+Python 3 + Django → Back-end e estrutura do sistema.
+
+SQLite → Banco de dados leve, armazenando todas as informações.
+
+HTML + CSS → Front-end, deixando o sistema moderno e responsivo.
+
+
+
+---
+
+6️⃣ Conclusão
+
+Sistema funcional para organizar barbearia.
+
+Permite controle de clientes, serviços e horários.
+
+Fácil de estender, podendo adicionar notificações, pagamentos online e backup automático.
