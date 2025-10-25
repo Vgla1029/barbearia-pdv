@@ -5,7 +5,7 @@ html {
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
-    color: #eee;
+    color: #474747;
 }
 
 body {
@@ -116,14 +116,13 @@ table {
     border-collapse: collapse;
 }
 td, th {
-    padding: 12px 10px;
+    margin: 0 0 12px 0;
+    padding: 10px;
     border-bottom: 1px solid #444;
-    color: #c9c9c9;
+    color: #474747;
 }
-
-/* Espaço entre a tabela e o que vem depois (botão, por exemplo) */
-table {
-    margin-bottom: 14px;
+main > * {
+    margin-bottom: 18px;
 }
 tr:hover {
     background: rgba(255,255,255,0.05);

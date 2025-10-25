@@ -26,6 +26,9 @@ LOGIN_URL = '/login/'
 
 STATIC_URL = '/static/'
 
+USE_TZ = True
+TIME_ZONE = 'America/Sao_Paulo'
+
 SITE_ID = 1
 
 INSTALLED_APPS = [
