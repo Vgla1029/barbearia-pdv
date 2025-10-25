@@ -1,22 +1,35 @@
 {% extends 'pdv/base.html' %}
 {% load static %} 
+
 {% block extra_styles %}
 <link rel="stylesheet" type="text/css" href="{% static 'login/login.css' %}">
 {% endblock %}
 
 {% block content %}
 
-<div>
-    <div class="container">
-     <h2>Login</h2>
-    <p>Digite os seus dados de acesso no campo abaixo.</p>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <p>Já tem uma conta? <a href="{% url 'login' %}">Faça login aqui</a>.</p>
-        <button type="submit" class="btn">Registrar</button>
-    </form> 
+<div class="back1">
+    <header>
+        <div class="perfil">
+            <img src="https://images.icon-icons.com/2104/PNG/512/padlock_icon_129506.png" alt="Foto Do Sistema">
+            <div class="TextPerfil">
+                <h1>Sistema De Admin Barbearia</h1>
+                <h2>Registre uma nova conta</h2>
+            </div>
+        </div>
+
+    <div class="box-login">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <p>Já tem uma conta? <a href="{% url 'login' %}">Faça login aqui</a>.</p>
+            <button type="submit">Registrar</button>
+        </form>
     </div>
+
+    <div class="credits">
+        <p>Desenvolvido Por:<h4>VGLA</h4></p>
+    </div>
+    </header>
 </div>
 
 {% endblock %}

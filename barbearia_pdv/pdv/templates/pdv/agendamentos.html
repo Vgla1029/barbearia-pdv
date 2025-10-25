@@ -6,22 +6,24 @@
 {% endblock %}
 
 {% block content %}
-<div class="titulo">
-    <h2>Lista de Agendamentos</h2>
-    <a href="{% url 'criar_agendamento' %}" class="btn">Criar Agendamento</a>
-</div>
-<table>
-    <tr>
-        <th>Cliente</th>
-        <th>Serviço</th>
-        <th>Data e Hora</th>
-    </tr>
-    {% for agendamento in agendamentos %}
-    <tr>
-        <td>{{ agendamento.cliente.nome }}</td>
-        <td>{{ agendamento.servico.nome }}</td>
-        <td>{{ agendamento.data_hora|date:"d/m/Y" }}</td>
-    </tr>
-    {% endfor %}
-</table>
+<main class="main-site">
+    <div class="titulo">
+        <h2>Lista de Agendamentos</h2>
+        <a href="{% url 'criar_agendamento' %}" class="btn">Criar Agendamento</a>
+    </div>
+    <table>
+        <tr>
+            <th>Cliente</th>
+            <th>Serviço</th>
+            <th>Data e Hora</th>
+        </tr>
+        {% for agendamento in agendamentos %}
+        <tr>
+            <td>{{ agendamento.cliente.nome }}</td>
+            <td>{{ agendamento.servico.nome }}</td>
+            <td>{{ agendamento.data_hora|date:"d/m/Y" }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</main>
 {% endblock %}

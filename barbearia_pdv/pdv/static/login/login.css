@@ -16,7 +16,6 @@ body {
     background-position: center;  
     height: 100%;  
     width: 100%;
-    
 }  
 .back1 {  
     flex:1;  
@@ -57,11 +56,6 @@ header {
     color: #474747;  
     font-size: 1.2rem;  
     margin: 0;  
-}  
-.main1 {  
-    width: 50%;  
-    margin: 0 auto;  
-    height: 100%;  
 }  
 .credits {  
     display: flex;  

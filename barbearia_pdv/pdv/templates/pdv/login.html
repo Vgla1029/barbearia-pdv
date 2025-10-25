@@ -1,35 +1,35 @@
 {% extends 'pdv/base.html' %}
 
-{% load static %} 
+{% load static %}
 {% block extra_styles %}
-<link rel="stylesheet" type="text/css" href="{% static 'login/login.css' %}">
-{% endblock %}
 
+<link rel="stylesheet" type="text/css" href="{% static 'login/login.css' %}">  
+{% endblock %} 
 {% block content %}
 
-<div class="back1">  
-    <header>
-        <div class="perfil">  
-            <img src="https://images.icon-icons.com/2104/PNG/512/padlock_icon_129506.png" alt="Foto Do Sistema">  
-            <div class="TextPerfil">  
-                <h1>Sistema De Admin Barbearia</h1>  
-                <h2>Digite As Informações De Login</h2>  
-            </div>  
-        </div>  
-    <div class="box-login"> 
-        <form method="post">
-        {% csrf_token %} 
-            <b>Username:</b>  
-            <input type="text" placeholder="Enter Username" id="username" name="username" required>  
-            <b>Pass:</b>  
-            <input type="password" placeholder="Enter Password" id="password" name="password" required>  
-            <p>Ainda não tem uma conta? <a href="{% url 'register' %}">Registre-se aqui</a>.</p> 
-            <button type="submit">Acessar</button>
-        </form>
-    </div>  
-    <div class="credits">  
-        <p>Desenvolvido Por:<h4>VGLA</h4></p>  
-    </div>  
-</div>  
-
+<div class="back1">    
+    <header>  
+        <div class="perfil">    
+            <img src="https://images.icon-icons.com/2104/PNG/512/padlock_icon_129506.png" alt="Foto Do Sistema">    
+            <div class="TextPerfil">    
+                <h1>Sistema De Admin Barbearia</h1>    
+                <h2>Digite As Informações De Login</h2>    
+            </div>    
+        </div>    
+    <div class="box-login">   
+        <form method="post">  
+        {% csrf_token %}   
+            <b>Username:</b>    
+            <input type="text" placeholder="Enter Username" id="username" name="username" required>    
+            <b>Pass:</b>    
+            <input type="password" placeholder="Enter Password" id="password" name="password" required>    
+            <p>Ainda não tem uma conta? <a href="{% url 'register' %}">Registre-se aqui</a>.</p>   
+            <button type="submit">Acessar</button>  
+        </form>  
+    </div>    
+    <div class="credits">    
+        <p>Desenvolvido Por:<h4>VGLA</h4></p>    
+    </div>    
+    </header>
+</div>    
 {% endblock %}
