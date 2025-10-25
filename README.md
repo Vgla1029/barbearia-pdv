@@ -35,10 +35,10 @@ Possui interface responsiva com estilos modernos usando CSS.
 
 ## Estrutura do Projeto
 
+'''
 barbearia_pdv/
 ├── barbearia_pdv/
 │   ├── __init__.py
-│   ├── __pycache__/
 │   ├── asgi.py
 │   ├── settings.py
 │   ├── urls.py
@@ -47,14 +47,12 @@ barbearia_pdv/
 ├── manage.py
 └── pdv/
     ├── __init__.py
-    ├── __pycache__/
     ├── admin.py
     ├── apps.py
     ├── forms.py
     ├── migrations/
     │   ├── 0001_initial.py
-    │   ├── __init__.py
-    │   └── __pycache__/
+    │   └── __init__.py
     ├── models.py
     ├── static/
     │   ├── global/
@@ -77,3 +75,4 @@ barbearia_pdv/
     ├── tests.py
     ├── urls.py
     └── views.py
+'''
